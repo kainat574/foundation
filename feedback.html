@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FOP/FEEDBACK</title>
+
+  <!-- Favicons -->
+  <link href="img/logo2.png" rel="icon">
+  <link href="img/logo2.png" rel="apple-touch-icon">
+
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/fav.jpg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/plugins/slider/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/slider/css/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+
+    <style>
+        html, body {
+        min-height: 100%;
+        }
+        body, div, form, input, p { 
+        padding: 0;
+        margin: 0;
+        outline: none;
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 14px;
+        color: #666;
+        line-height: 22px;
+        }
+        h1 {
+        font-weight: 400;
+        }
+        .testbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+        padding: 3px;
+        }
+        form {
+        width: 100%;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 2px 5px #ccc; 
+        }
+        input {
+        width: calc(100% - 10px);
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        vertical-align: middle;
+        }
+        input:hover, textarea:hover {
+        outline: none;
+        border: 1px solid #095484;
+        }
+        th, td {
+        width: 28%;
+        padding: 15px 0;
+        border-bottom: 1px solid #ccc;
+        text-align: center;
+        vertical-align: unset;
+        line-height: 18px;
+        font-weight: 400;
+        word-break: break-all;
+        }
+        .first-col {
+        width: 16%;
+        text-align: left;
+        }
+        textarea:hover {
+        outline: none;
+        border: 1px solid #1c87c9;
+        }
+        table {
+        width: 100%;
+        }
+        textarea {
+        width: calc(100% - 6px);
+        }
+        .question {
+        padding: 15px 0 5px;
+        color: #095484;
+        }
+        .question-answer label {
+        display: block;
+        padding: 0 20px 10px 0;
+        }
+        .question-answer input {
+        width: auto;
+        }
+        .btn-block {
+        margin-top: 20px;
+        text-align: center;
+        }
+        button {
+        width: 150px;
+        padding: 10px;
+        border: none;
+        -webkit-border-radius: 5px; 
+        -moz-border-radius: 5px; 
+        border-radius: 5px; 
+        background-color:#1a202f;
+        font-size: 16px;
+        color: #fff;
+        cursor: pointer;
+        }
+        button:hover {
+        background-color: #0666a3;
+        }
+        /* @media (min-width: 568px) {
+        th, td {
+        word-break: keep-all;
+        }
+        } */
+      </style>
+  
+
+
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="continer-fluid">
+   
+      <div id="menu-jk" class="header-bottom">
+          <div class="container">
+              <div class="row nav-row" >
+                  <div class="col-lg-4 col-md-12 logo">
+                      <a href="index.html">
+                          <img src="img/logo.png" alt="" style="height:80px; width: 500px;" >
+                          <a data-toggle="collapse" data-target="#menu" href="#menu"><i class="fas d-block d-lg-none  small-menu fa-bars"></i></a>
+                      </a>
+  
+                  </div>
+  
+                  <div id="menu" class="col-lg-8 col-md-12 d-none d-lg-block nav-col">
+  
+                              <ul class="navbad">
+                                  <li class="nav-item active">
+                                      <a class="nav-link" href="index.html">Home
+                                      </a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="aboutus.html">About Us</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="services.html">Services</a>
+                                  </li>
+  
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="index.html#d1">Blog</a>
+                                  </li>
+  
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="queries.html">Queries</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="contact_us.html">Contact US</a>
+                                  </li>
+  
+  
+  
+  
+                              </ul>
+  
+  
+                  </div>
+              </div>
+          </div>
+      </div> 
+      
+  </header>
+
+<!-- feedback -->
+<div class="container-fluid" style="border:30px solid grey;">
+    <div class="testbox">
+      <form action="donation php/feedform.php" method="POST">
+        
+        <div class="section-title container mt-2 ">
+            <h2>Tell us Your Thought</h2><br>
+            <p>FEEDBACK FORM</p>
+          </div>
+       
+      
+
+        <p class="question">Is this the first time you have visited the website?</p>
+        <div class="question-answer">
+          <label><input type="radio"value="yes" name="radio"/> yes</label>
+          <label><input type="radio" value="no" name="radio" /> no</label>
+          <textarea name="visited" rows="2" placeholder="answer"></textarea>
+        </div>
+
+        <p class="question">What is the PRIMARY reason you came to the site?</p>
+        <textarea rows="5" required name="reason"></textarea>
+
+        <p class="question">Did you find what you needed?</p>
+        <div class="question-answer">
+          <label><input type="radio" name="radio" value="yes,all of it" /> Yes, all of it</label>
+          <label><input type="radio"  name="radio" value="yes, some of it"/> Yes, some of it</label>
+          <label><input type="radio"  name="radio" value="no" /> No, none of it</label>
+          <textarea name="needed" rows="2" placeholder="answer"></textarea>
+        </div>
+
+        <p class="question">If you did not find any or all of what you needed, please tell us what information you were looking for.</p>
+        <textarea rows="5" name="found"></textarea>
+
+        <p class="question">Please tell us how easy it is to find information on the site.</p>
+        <div class="question-answer">
+          <label><input type="radio"  name="radio" value="very easy" /> Very Easy</label>
+          <label><input type="radio"  name="radio" value="easy"  /> Easy</label>
+          <label><input type="radio"  name="radio" value="average" /> Average</label>
+          <label><input type="radio"  name="radio" value="difficult"  /> Difficult</label>
+          <label><input type="radio"  name="radio" value="very difiicult"  /> Very Difficult</label>
+          <textarea name="easy" rows="2" placeholder="answer"></textarea>
+        </div>
+
+        <p class="question">What is your overall impression of the site?</p>
+        <div class="question-answer">
+          <label><input type="radio"  name="radio" value="below Expectations" /> Below Expectations</label>
+          <label><input type="radio"  name="radio" value="meets Expectations"  /> Meets Expectations</label>
+          <label><input type="radio" name="radio" value="exceeds Expectations" /> Exceeds Expectations</label>  
+          <textarea name="imp" rows="2" placeholder="answer"></textarea>       
+        </div>
+
+        <!-- <p class="question">What is your overall impression of the site?</p>
+        <table>
+          <tr>
+            <th class="first-col"></th>
+            <th>Below Expectations</th>
+            <th>Meets Expectations</th>
+            <th>Exceeds Expectations</th>
+          </tr>
+          <tr>
+            <td class="first-col">Professional</td>
+            <td><input type="radio" value="none" name="professional" /></td>
+            <td><input type="radio" value="none" name="professional" /></td>
+            <td><input type="radio" value="none" name="professional" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Informative</td>
+            <td><input type="radio" value="none" name="Informative" /></td>
+            <td><input type="radio" value="none" name="Informative" /></td>
+            <td><input type="radio" value="none" name="Informative" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Visually Pleasing</td>
+            <td><input type="radio" value="none" name="Visually" /></td>
+            <td><input type="radio" value="none" name="Visually" /></td>
+            <td><input type="radio" value="none" name="Visually" /></td>
+          </tr>
+        </table> -->
+        <p class="question">What is the likelihood that you will visit the website again?</p>
+        <div class="question-answer">
+          <label><input type="radio"  name="radio" value="Extremely likely"/> Extremely likely</label>
+          <label><input type="radio" name="radio" value="very likely" /> Very likely</label>
+          <label><input type="radio"  name="radio" value="Moderately likely" /> Moderately likely</label>
+          <label><input type="radio"  name="radio" value="Slightly likely" /> Slightly likely</label>
+          <label><input type="radio" name="radio" value="not at all" /> Not at all likely</label>
+          <textarea name="likelihood" rows="2" placeholder="answer"></textarea>
+        </div>
+      
+        <p class="question">Please add any comments you have for improving the website. We welcome suggestions on specific areas for improvements, features you would like to see added to the site, and examples of what you consider good websites.</p>
+        <textarea rows="5" name="message"></textarea>
+        
+        <div class="btn-block">
+          <button type="submit" href="" name="submit">Send</button>
+        </div>
+      </form>
+    </div>
+    </div>
+  
+
+   
+
+       
+  
+                 
+  <!--  ************************* Footer Starts Here ************************** -->
+          
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <h2 id="d2">About Us</h2>
+                <p style="color: white;">We believe in a kinder world where anyone can help anyone. We empower those who 
+                    are kind at heart and who are willing to make an impact. We bridge the gap between 
+                    those in need with those willing to help. We create social impact through fundraising,
+                    innovation, volunteering, marketing, and knowledge sharing.</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <h2>Useful Links</h2>
+                <ul class="list-unstyled link-list">
+                  
+                    <li><a ui-sref="portfolio" href="services.html">Services</a><i class="fa fa-angle-right"></i></li>
+                    <li><a ui-sref="products" href="index.html#d1">Blog</a><i class="fa fa-angle-right"></i></li>
+                    <li><a ui-sref="gallery" href="queries.html">Queries</a><i class="fa fa-angle-right"></i></li>
+                    <li><a ui-sref="contact" href="contact_us.html">Contact us</a><i class="fa fa-angle-right"></i></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-12 map-img">
+                <h2>Contact Us</h2>
+                <address class="md-margin-bottom-40" style="color: white;">
+                    Aptech Computer Education  <br>
+                    Gulshan-e-Iqbal<br>
+                    Karachi City, Sindh<br>
+                    Phone:  (+92)2134980576-77 <br>
+                    Email: <a href="mailto:info-gls@aptech-education.com.pk" class="">info-gls@aptech-education.com.pk</a><br>
+                    Web: <a href="https://aptech-education.com.pk/" target="_blank" class="">www.aptech-education.com.pk/</a>
+                </address>
+
+            </div>
+        </div>
+        
+       
+    
+</footer>
+          
+    
+</body>
+
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+<script src="assets/plugins/slider/js/owl.carousel.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+</html>
